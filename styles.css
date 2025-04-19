@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+header nav{
+  background-color: #777;
+  padding: 1rem;
+
+}
+
+ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover{
+    color: yellow;
+}
+
+.hero{
+    background-color: lightcoral;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+main .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem;
+    }
+
+main .container section{
+    flex: 3;
+}
+main h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main p{
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+main .container aside{
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+main .container aside:hover{
+    background-color: lightblue;
+    color: #000;
+}
+
+
+@media screen and (max-width: 760px){
+      main .container{
+        flex-direction: column;
+      }
+      main h2{
+        text-align: center;
+      }
+}
